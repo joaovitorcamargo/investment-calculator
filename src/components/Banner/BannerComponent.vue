@@ -1,6 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <div class="banner w-100 flex flex-column gap-3">
     <h1>Simulador de investimento</h1>
