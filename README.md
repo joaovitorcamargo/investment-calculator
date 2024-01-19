@@ -1,5 +1,4 @@
 # Passo a Passo para executar o projeto
-- versão do node 20.11.0
 - rode o comando npm i
 - para executar os teste unitários execute npm run test:unit
 - para executar o projeto rode npm run dev
