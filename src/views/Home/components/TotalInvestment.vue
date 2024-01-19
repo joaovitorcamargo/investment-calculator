@@ -4,11 +4,11 @@ import {investmentDataStore} from '../../../store/investmentDataStore'
 const store = investmentDataStore(); 
 
 const totalArca = computed(() => {
-  return store.calculateTotalArca()
+  return `R$ ${store.calculateTotalArca().toFixed(2).replace(".", ",")}`;
 })
 
 const totalSelic = computed(() => {
-  return store.calculateTotalSelic()
+  return `R$ ${store.calculateTotalSelic().toFixed(2).replace(".", ",")}`;
 })
 
 </script>
