@@ -1,13 +1,36 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import Slider from 'primevue/slider';
+import {investmentDataStore} from '../../../store/investmentDataStore'
 
-const initialInvestment = ref(0);
-const monthInvestment = ref(0);
-const stayInvestment = ref(1);
+const store = investmentDataStore();
+
+const initialInvestment = ref(0 as number);
+const monthInvestment = ref(0 as number);
+const stayInvestment = ref(1 as number);
 
 const labelStayInvestment = computed(() => {
   return stayInvestment.value < 2 ? `${stayInvestment.value} Mes` :  `${stayInvestment.value} Meses`
+})
+
+const labelMonthInvestment = computed(() => {
+  return `R$ ${monthInvestment.value.toFixed(2).replace('.',',')}`
+})
+
+const labelInitialinvestment = computed(() => {
+  return `R$ ${initialInvestment.value.toFixed(2).replace('.',',')}`
+})
+
+watch(initialInvestment, (value: number) => {
+  store.initialInvestment = value
+})
+
+watch(monthInvestment, (value: number) => {
+  store.monthInvestment = value
+})
+
+watch(stayInvestment, (value: number) => {
+  store.stayInvestment = value
 })
 
 </script>
@@ -17,12 +40,12 @@ const labelStayInvestment = computed(() => {
     <div class="investmentData flex flex-column align-items-center gap-4">
       <h5 class="align-self-start">Quanto gostaria de investir?</h5>
       <Slider v-model="initialInvestment" class="w-full" :min="0" :max="5000" :step="100"/>
-      <span> R$ {{ initialInvestment }},00 </span>
+      <span> {{ labelInitialinvestment }} </span>
     </div>
     <div class="investmentData flex flex-column align-items-center gap-4">
       <h5 class="align-self-start">Por mês, quanto investiria?</h5>
       <Slider v-model="monthInvestment" class="w-full" :min="0" :max="5000" :step="100"/>
-      <span> R$ {{ monthInvestment }},00 </span>
+      <span> {{ labelMonthInvestment }} </span>
     </div>
     <div class="investmentData flex flex-column align-items-center gap-4">
       <h5 class="align-self-start">Quanto tempo deixaria seu dinheiro investido?</h5>

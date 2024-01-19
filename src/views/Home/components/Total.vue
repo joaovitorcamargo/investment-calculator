@@ -1,10 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { computed } from 'vue';
+import {investmentDataStore} from '../../../store/investmentDataStore'
+const store = investmentDataStore(); 
+
+const total = computed(() => {
+  return store.calculateTotal()
+})
+</script>
 
 <template>
   <div class="totalInvestment grid row-gap-3">
     <div class="flex flex-column gap-3 w-full">
-      <span class="label">Em 24 meses você terá</span>
-      <h5>R$ 1.0020,00</h5>
+      <span class="label">Em {{ store.monthsStayed }} você terá</span>
+      <h5>{{ total }}</h5>
       <hr class="align-self-start w-full">
     </div>
     <span class="taxInformation w-full">
