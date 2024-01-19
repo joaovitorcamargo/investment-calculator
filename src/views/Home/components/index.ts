@@ -1,4 +1,4 @@
-import FormInvestment from "./FormInvestment.vue";
-import Total from "./Total.vue";
+import FormInvestment from './FormInvestment.vue'
+import Total from './TotalInvestment.vue'
 
-export { FormInvestment, Total };
+export { FormInvestment, Total }

@@ -3,17 +3,26 @@ import { computed } from 'vue';
 import {investmentDataStore} from '../../../store/investmentDataStore'
 const store = investmentDataStore(); 
 
-const total = computed(() => {
-  return store.calculateTotal()
+const totalArca = computed(() => {
+  return store.calculateTotalArca()
 })
+
+const totalSelic = computed(() => {
+  return store.calculateTotalSelic()
+})
+
 </script>
 
 <template>
   <div class="totalInvestment grid row-gap-3">
     <div class="flex flex-column gap-3 w-full">
-      <span class="label">Em {{ store.monthsStayed }} você terá</span>
-      <h5>{{ total }}</h5>
+      <span class="label">Em {{ store.monthsStayed }} você terá com a ARCA</span>
+      <h5>{{ totalArca }}</h5>
       <hr class="align-self-start w-full">
+    </div>
+    <div class="flex flex-column gap-3 w-full">
+      <span class="label-selic">Em {{ store.monthsStayed }} você terá com a SELIC</span>
+      <h5 class="total-selic">{{ totalSelic }}</h5>
     </div>
     <span class="taxInformation w-full">
       TAXA SELIC: <b>9,25%</b>
@@ -28,12 +37,22 @@ const total = computed(() => {
   .totalInvestment {
     h5 {
       font-weight: 600;
-      font-size: 4.5rem;
+      font-size: 4rem;
     }
     .label {
       color:#2D2D2D;
       font-weight: 600;
-      font-size: 2.5rem;
+      font-size: 2rem;
+    }
+    .label-selic {
+      color: #949494;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+    .total-selic{
+      color: #949494;
+      font-weight: 100;
+      font-size: 3rem;
     }
     hr {
       border: 2px solid #54D4A0;
@@ -52,6 +71,16 @@ const total = computed(() => {
     }
     .label {
       font-size: 1.4rem;
+    }
+    .label-selic {
+      color: #949494;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .total-selic{
+      color: #949494;
+      font-weight: 100;
+      font-size: 1.3rem;
     }
   }
 }
