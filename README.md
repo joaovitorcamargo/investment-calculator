@@ -18,6 +18,6 @@ Calculadora de Investimento
 
 ## Regras de Negócio
 
-- [x] O usuário não deve inserir o valor incial, mensal e tempo de investimento
+- [x] O usuário deve inserir o valor inicial, mensal e tempo de investimento
 - [x] O usuário deverá ver o resultado do investimento ARCA com base de 18% a.a.
 - [x] O usuário deverá ver o resultado do investimento SELIC com base de 9.25%.
