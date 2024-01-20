@@ -33,6 +33,7 @@ watch(stayInvestment, (value: number) => {
       <h5 class="self-start">Quanto gostaria de investir?</h5>
       <SliderInputComponent
         id="initialInvestment"
+        data-cy="initialInvestment"
         class="w-full"
         min="100"
         max="5000"
@@ -44,6 +45,7 @@ watch(stayInvestment, (value: number) => {
       <h5 class="self-start">Por mês, quanto investiria?</h5>
       <SliderInputComponent
         id="monthInvestment"
+        data-cy="monthInvestment"
         class="w-full"
         min="100"
         max="5000"
@@ -55,6 +57,7 @@ watch(stayInvestment, (value: number) => {
       <h5 class="self-start">Quanto tempo deixaria seu dinheiro investido?</h5>
       <SliderInputComponent
         id="stayInvestment"
+        data-cy="stayInvestment"
         class="w-full"
         min="12"
         max="120"

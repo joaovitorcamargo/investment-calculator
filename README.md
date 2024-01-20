@@ -1,7 +1,8 @@
 # Passo a Passo para executar o projeto
-- rode o comando npm i
-- para executar os teste unitários execute npm run test:unit
-- para executar o projeto rode npm run dev
+- rode o comando "npm i"
+- para executar os teste unitários execute "npm run test:unit"
+- para executar o projeto rode "npm run dev"
+- para executar o teste e2e rode "npm run test:e2e"
 - pronto para utilizar a aplicação
 
 # Titulo do Teste

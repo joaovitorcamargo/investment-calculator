@@ -38,7 +38,7 @@ function emitValue(event) {
     @input="emitValue($event)">
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .slider {
   -webkit-appearance: none;
   appearance: none;
