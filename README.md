@@ -3,6 +3,7 @@
 - para executar os teste unitários execute "npm run test:unit"
 - para executar o projeto rode "npm run dev"
 - para executar o teste e2e rode "npm run test:e2e"
+- para executar o storybook "npm run storybook"
 - pronto para utilizar a aplicação
 
 # Titulo do Teste
