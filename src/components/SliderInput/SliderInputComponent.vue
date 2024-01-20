@@ -7,7 +7,7 @@ const attrs = useAttrs();
 const currentValue = ref(attrs.min)
 
 onMounted(() => {
-  const getSlider = document.getElementById(attrs.id);
+  const getSlider = document.querySelector<HTMLInputElement>('#' + attrs.id);
 
   if (getSlider) {
     getSlider.addEventListener('input', function () {
@@ -22,9 +22,12 @@ onMounted(() => {
 })
 
 
-function emitValue(event) {
-  currentValue.value = event.target.value;
-  emit('update:modelValue', currentValue.value)
+function emitValue(event: Event) {
+  const inputElement = event.target as HTMLInputElement;
+  if (inputElement) {
+    currentValue.value = inputElement.value;
+    emit('update:modelValue', currentValue.value);
+  }
 }
 
 </script>
