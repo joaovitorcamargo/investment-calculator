@@ -5,6 +5,7 @@
 - para executar o teste e2e rode "npm run test:e2e"
 - para executar o storybook "npm run storybook"
 - pronto para utilizar a aplicação
+- Link da aplicação no GitHub Pages => https://joaovitorcamargo.github.io/investment-calculator/
 
 # Titulo do Teste
 
