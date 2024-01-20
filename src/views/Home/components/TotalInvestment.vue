@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import {investmentDataStore} from '../../../store/investmentDataStore'
+import formatResult from '@/helpers/formatResult';
 const store = investmentDataStore(); 
 
 const totalArca = computed(() => {
-  return `R$ ${store.calculateTotalArca().toFixed(2).replace(".", ",")}`;
+  return formatResult(store.calculateTotalArca());
 })
 
 const totalSelic = computed(() => {
-  return `R$ ${store.calculateTotalSelic().toFixed(2).replace(".", ",")}`;
+  return formatResult(store.calculateTotalSelic());
 })
 
 </script>

@@ -8,6 +8,14 @@
 
 Calculadora de Investimento
 
+## Tecnologias usadas:
+
+Lista de Tecnologias usadas nesse App:
+- [Vue 3](https://vuejs.org/)
+- [Vite](https://vitejs.dev/)
+- [Cypress](https://docs.cypress.io/guides/overview/why-cypress)
+- [Tailwindcss](https://v2.tailwindcss.com/)
+
 ## Requisitos Funcionais
 
 - [x] Deve ser possível Inserir um valor inicial

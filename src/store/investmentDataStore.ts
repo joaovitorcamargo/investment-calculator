@@ -4,9 +4,9 @@ import calculateTotalInvestment from '../helpers/calculateTotalInvestment'
 export const investmentDataStore = defineStore('investmentDataStore', {
   state: () => {
     return {
-      initialInvestment: 0 as number,
-      monthInvestment: 0 as number,
-      stayInvestment: 1 as number,
+      initialInvestment: 100 as number,
+      monthInvestment: 100 as number,
+      stayInvestment: 12 as number,
       total: 0 as number
     }
   },

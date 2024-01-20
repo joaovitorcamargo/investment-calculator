@@ -14,19 +14,19 @@ describe('FormInvestment', () => {
 
   it('renders initial investment slider', () => {
     const wrapper = mount(FormInvestment)
-    const initialInvestmentSlider = wrapper.findComponent({ name: 'Slider' }) // Adjust the name as needed
+    const initialInvestmentSlider = wrapper.findComponent({ name: 'SliderInputComponent' })
     expect(initialInvestmentSlider.exists()).toBe(true)
   })
 
   it('renders month investment slider', () => {
     const wrapper = mount(FormInvestment)
-    const monthInvestmentSlider = wrapper.findComponent({ name: 'Slider' }) // Adjust the name as needed
+    const monthInvestmentSlider = wrapper.findComponent({ name: 'SliderInputComponent' })
     expect(monthInvestmentSlider.exists()).toBe(true)
   })
 
   it('renders stay investment slider', () => {
     const wrapper = mount(FormInvestment)
-    const stayInvestmentSlider = wrapper.findComponent({ name: 'Slider' }) // Adjust the name as needed
+    const stayInvestmentSlider = wrapper.findComponent({ name: 'SliderInputComponent' })
     expect(stayInvestmentSlider.exists()).toBe(true)
   })
 
