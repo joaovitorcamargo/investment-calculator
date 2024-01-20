@@ -17,6 +17,7 @@ Lista de Tecnologias usadas nesse App:
 - [Vite](https://vitejs.dev/)
 - [Cypress](https://docs.cypress.io/guides/overview/why-cypress)
 - [Tailwindcss](https://v2.tailwindcss.com/)
+- [Storybook](https://storybook.js.org/)
 
 ## Requisitos Funcionais
 
