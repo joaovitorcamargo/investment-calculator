@@ -28,9 +28,9 @@ watch(stayInvestment, (value: number) => {
 </script>
 
 <template>
-  <div class="formInvestment flex flex-column gap-8 w-full">
-    <div class="investmentData flex flex-column align-items-center gap-4">
-      <h5 class="align-self-start">Quanto gostaria de investir?</h5>
+  <div class="formInvestment flex flex-col gap-8">
+    <div class="investmentData flex flex-col items-center gap-4">
+      <h5 class="self-start">Quanto gostaria de investir?</h5>
       <SliderInputComponent
         id="initialInvestment"
         class="w-full"
@@ -40,8 +40,8 @@ watch(stayInvestment, (value: number) => {
         v-model="initialInvestment"/>
       <span> {{ formatResult(initialInvestment) }} </span>
     </div>
-    <div class="investmentData flex flex-column align-items-center gap-4">
-      <h5 class="align-self-start">Por mês, quanto investiria?</h5>
+    <div class="investmentData flex flex-col items-center gap-4">
+      <h5 class="self-start">Por mês, quanto investiria?</h5>
       <SliderInputComponent
         id="monthInvestment"
         class="w-full"
@@ -51,8 +51,8 @@ watch(stayInvestment, (value: number) => {
         v-model="monthInvestment"/>
       <span> {{ formatResult(monthInvestment) }} </span>
     </div>
-    <div class="investmentData flex flex-column align-items-center gap-4">
-      <h5 class="align-self-start">Quanto tempo deixaria seu dinheiro investido?</h5>
+    <div class="investmentData flex flex-col items-center gap-4">
+      <h5 class="self-start">Quanto tempo deixaria seu dinheiro investido?</h5>
       <SliderInputComponent
         id="stayInvestment"
         class="w-full"

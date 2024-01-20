@@ -15,22 +15,24 @@ const totalSelic = computed(() => {
 </script>
 
 <template>
-  <div class="totalInvestment grid row-gap-3">
-    <div class="flex flex-column gap-3 w-full">
+  <div class="totalInvestment grid gap-2">
+    <div class="flex flex-col w-full">
       <span class="label">Em {{ store.monthsStayed }} você terá com a ARCA</span>
       <h5>{{ totalArca }}</h5>
-      <hr class="align-self-start w-full">
     </div>
-    <div class="flex flex-column gap-3 w-full">
+    <hr class="align-self-start w-full">
+    <div class="flex flex-col w-full">
       <span class="label-selic">Em {{ store.monthsStayed }} você terá com a SELIC</span>
       <h5 class="total-selic">{{ totalSelic }}</h5>
     </div>
-    <span class="taxInformation w-full">
-      TAXA SELIC: <b>9,25%</b>
-    </span>
-    <span class="taxInformation w-full">
-      RENTABILIDADE DO ARCA: <b>18% a.a.</b>
-    </span>
+    <div class="flex flex-col gap-3 w-full">
+      <span class="taxInformation w-full">
+        TAXA SELIC: <b>9,25%</b>
+      </span>
+      <span class="taxInformation w-full">
+        RENTABILIDADE DO ARCA: <b>18% a.a.</b>
+      </span>
+    </div>
   </div>
 </template>
 
@@ -71,7 +73,7 @@ const totalSelic = computed(() => {
       font-size: 2rem;
     }
     .label {
-      font-size: 1.4rem;
+      font-size: 1rem;
     }
     .label-selic {
       color: #949494;
@@ -81,7 +83,7 @@ const totalSelic = computed(() => {
     .total-selic{
       color: #949494;
       font-weight: 100;
-      font-size: 1.3rem;
+      font-size: 2rem;
     }
   }
 }

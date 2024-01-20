@@ -4,12 +4,8 @@ import {Total, FormInvestment} from './components/index'
 </script>
 
 <template>
-  <div class="grid w-full row-gap-8">
-      <div class="xl:col-6 lg:col-12 sm:col-12">
-        <FormInvestment/>
-      </div>
-      <div class="xl:col-5 xl:col-offset-1 lg:col-12 sm:col-12">
-        <Total/>
-      </div>
+  <div class="container flex flex-col mx-auto py-12 lg:flex-row px-10 lg:gap-40 gap-14">
+    <FormInvestment/>
+    <Total/>
   </div>
 </template>

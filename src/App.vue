@@ -6,7 +6,7 @@ import Banner from './components/Banner/BannerComponent.vue'
 <template>
   <Header />
   <Banner/>
-  <main class="investmentData">
+  <main>
     <RouterView/>
   </main>
 </template>
