@@ -26,7 +26,7 @@ npm run dev
 ### Link da aplicação no GitHub Page
 - https://joaovitorcamargo.github.io/investment-calculator/
 
-## Tecnologias usadas:
+## Tecnologias Utilizadas:
 - [Vue 3](https://vuejs.org/)
 - [Vite](https://vitejs.dev/)
 - [Cypress](https://docs.cypress.io/guides/overview/why-cypress)
