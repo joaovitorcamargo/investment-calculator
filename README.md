@@ -11,9 +11,7 @@
 
 Calculadora de Investimento
 
-## Tecnologias usadas:
-
-Lista de Tecnologias usadas nesse App:
+## Tecnologias Utilizadas:
 - [Vue 3](https://vuejs.org/)
 - [Vite](https://vitejs.dev/)
 - [Cypress](https://docs.cypress.io/guides/overview/why-cypress)
